@@ -3,7 +3,7 @@
 export default function Index(){
 
     return(
-        <div className="container px-4 md:px-12 text-center relative mb-10" id="visionmision">
+        <div className="container px-4 md:px-12 mx-auto text-center relative mb-10" id="visionmision">
             <div className="flex justify-center">
                 <img className="absolute" src="vision-mision-bg.jpg" alt="warehouse"/>
             </div>

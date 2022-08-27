@@ -3,7 +3,7 @@
 export default function Index() {
     
     return(
-        <div className="flex justify-center items-center px-4 md:px-12 mx-auto space-x-5 py-5">
+        <div className="flex justify-center items-center px-4 md:px-12 mx-auto space-x-5 py-5 w-full 2xl:w-3/6">
             <div>
                 <img src="logo.png" alt="" />
             </div>
