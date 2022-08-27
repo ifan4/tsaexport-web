@@ -44,9 +44,9 @@ const MainSwiper = ()=>{
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <SecondCarousel imageSource={item.imageFile}/>
                             </div>
-                            <div className="md:w-1/2 h-3/4 bg-orange-900/75 text-left py-3 px-7 md:py-12 md:px-12">
-                                <h4 className="text-yellow-200 font-bold text-4xl mb-2">Products</h4>
-                                <table className="table-fixed text-white mb-4 font-bold">
+                            <div className="md:w-1/2 h-3/4 bg-orange-900/75 text-left py-3 px-16 md:py-12 md:px-12">
+                                <h4 className="text-yellow-200 font-bold text-2xl md:text-4xl mb-2">Products</h4>
+                                <table className="table-fixed text-white mb-4 font-bold text-sm md:text-base">
                                     <tbody>
                                         <tr>
                                             <td>Category</td>
@@ -66,8 +66,8 @@ const MainSwiper = ()=>{
                                     </tbody>
                                 </table>
 
-                                <h5 className="text-yellow-200 font-bold text-2xl mb-2">{item.name}</h5>
-                                <p className="text-white" dangerouslySetInnerHTML={{__html:item.description }}/>
+                                <h5 className="text-yellow-200 font-bold text-xl md:text-2xl mb-2">{item.name}</h5>
+                                <p className="text-white text-sm md:text-base" dangerouslySetInnerHTML={{__html:item.description }}/>
                             </div>
                         </div>
 
@@ -84,7 +84,7 @@ export default function Products() {
     return(
         <div>
             <div 
-            class="bg-cover bg-center h-screen my-12" 
+            class="bg-cover bg-center md:h-screen my-12" 
             id="products"
             style={{
                 backgroundImage: `url(/products/products-wallpaper.jpg)`,
