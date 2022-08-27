@@ -5,6 +5,8 @@ import ProductsData from './data/products.json'
 import { useEffect } from "react";
 import Visionmision from "./visionmision";
 import Carousel2 from './carousel2'
+import CompanyProfile from './companyProfile'
+import ContactUs from './contactUs'
 
 export default function(){
     useEffect(()=>{
@@ -19,6 +21,8 @@ export default function(){
             <Products/>
             <Visionmision/>
             <Carousel2/>
+            <CompanyProfile/>
+            <ContactUs/>
         </div>
     )
 }

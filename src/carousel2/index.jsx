@@ -53,7 +53,7 @@ export default function Index() {
 
 const Descriptions = ({headline,desc})=>{
     return(
-        <div className="absolute w-full text-left p-16 md:p-0 md:ml-56 text-white">
+        <div className="absolute w-full text-left p-16 md:p-0 md:ml-56 text-white" id="aboutUs">
             <h3 className="md:text-6xl font-bold md:mb-3">{headline}</h3>
             <p className="text-sm md:text-base md:w-1/4">{desc}</p>
         </div>
