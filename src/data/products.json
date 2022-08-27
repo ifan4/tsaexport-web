@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Black Pepper",
+        "category": "Black Pepper",
+        "variety": ["Black Pepper", "White Pepper"],
+        "imageFile": "blackPaper",
+        "description": "Black pepper or (Pipper Nigrum) is a flowering vine in the family Pipperceae, which is usually known as peppercorn, which is dried and used as spice or seasoning. One of the most distinctive varieties of black pepper came from Indonesia. Is known all over the world because of its burning pungency, taste, and aroma."
+    },
+    {
+        "name": "White Pepperr",
+        "category": "White Pepper",
+        "variety": ["Black Pepper", "White Pepper"],
+        "imageFile": "whitePepper",
+        "description": "White pepper is commonly used in chinesse,Thai, and Portugesse cuisine. Our company prepared the best white pepper in our country like Muntok white pepper from lampung and much more white pepper from other cities."
+    },
+    {
+        "name": "Pinang/areca nut/ betel nut",
+        "category": "Areca nut",
+        "variety": ["80 - 85", "85 - 90"],
+        "imageFile": "arecaNut",
+        "description": "<p>The areca nut is the seed of the areca palm, which grows in much of the tropical Pacific, Southeast and South Asia, and parts of east Africa. It is commonly referred to as betel nut, not to be confused with betel leaves that are often used to wrap it.</p> <p>We produce our own betel nut it takes place in Kalimantan.</p>"
+    },
+    {
+        "name": "Coconut",
+        "category": "All derivatives of coconut products",
+        "variety": ["All grade"],
+        "imageFile": "coconut",
+        "description": "Botanically speaking, a coconut is a fibrous one-seeded drupe, also known as a dry drupe. However, when using loose definitions, the coconut can be all three: a fruit, a nut, and a seed. alson we provide all the deviatives of coconut product conclude copra, semihusked, husked, etc."
+    }
+]

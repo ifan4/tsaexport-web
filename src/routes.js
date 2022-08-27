@@ -7,7 +7,6 @@ import Home from "./home";
 function rute(){
 
     react.useEffect(()=>{
-        console.log("Test title doc");
         document.title = "TSA Export"
     },[])
 
