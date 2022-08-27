@@ -83,7 +83,9 @@ export default function Products() {
     
     return(
         <div>
-            <div class="bg-cover bg-center h-screen my-12" 
+            <div 
+            class="bg-cover bg-center h-screen my-12" 
+            id="products"
             style={{
                 backgroundImage: `url(/products/products-wallpaper.jpg)`,
             }}>

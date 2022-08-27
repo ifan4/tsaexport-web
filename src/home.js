@@ -3,6 +3,7 @@ import HeroBanner from "./heroBanner";
 import Products from './products'
 import ProductsData from './data/products.json'
 import { useEffect } from "react";
+import Visionmision from "./visionmision";
 
 export default function(){
     useEffect(()=>{
@@ -15,6 +16,7 @@ export default function(){
             <Header/>
             <HeroBanner/>
             <Products/>
+            <Visionmision/>
         </div>
     )
 }
