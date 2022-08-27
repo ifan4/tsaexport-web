@@ -7,7 +7,7 @@ export default function Index(){
             <div className="flex justify-center">
                 <img className="absolute" src="vision-mision-bg.jpg" alt="warehouse"/>
             </div>
-            <div className="relative mt-4 md:mt-12 mb-4 md:mb-9">
+            <div className="relative mt-7 md:mt-12 mb-4 md:mb-9">
                 <h3 className="text-3xl text-white font-bold">
                     Vision and Mission
                 </h3>
