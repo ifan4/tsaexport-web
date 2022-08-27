@@ -3,9 +3,9 @@
 export default function(){
 
     return(
-        <div className="relative container px-4 md:px-12">
-            <img className="absolute right-0"src={'/hero-image.jpg'}/>
-            <div className="absolute z-10">
+        <div className="relative container px-4 md:px-12 mx-auto">
+            <img className="absolute right-0 z-0"src={'/hero-image.jpg'}/>
+            <div className="relative z-10">
                 <img src="/tsa-logo-hero.png" className="mb-4"/>
                 <div className="md:ml-12">
                     <div className="bg-orange-900 text-2xl text-white px-4 py-3 inline-block"

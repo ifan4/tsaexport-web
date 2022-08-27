@@ -4,7 +4,7 @@ import {MdEmail} from 'react-icons/md'
 export default function Header() {
     return(
         <>
-            <nav className="flex justify-between px-4 md:px-12">
+            <nav className="container flex justify-between px-4 md:px-12 mx-auto">
                 <p className="text-xs w-96 mt-2">
                     Ruko South Goldfinch blok D-18, Summarecon, Jl. Springs Boulevard, Cihuni, Pagedangan, <span className="block">Tangerang Regency, Banten 15332</span>
                 </p>
@@ -19,7 +19,7 @@ export default function Header() {
                     </button>
                 </div>
             </nav>
-            <nav className='flex justify-end divide-x px-4 md:px-12 mt-2'>
+            <nav className='container flex justify-end divide-x px-4 md:px-12 mt-2 mx-auto'>
                 <button className='px-3 py-2 transition hover:text-amber-700 rounded-l-lg duration-200'>
                     Vision and Mission
                 </button>
