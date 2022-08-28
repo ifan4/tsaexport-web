@@ -3,20 +3,21 @@ import {MdEmail} from 'react-icons/md'
 import { Link } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
+import { useOpenFeedbackModalContext } from '../home'
 
 
 export default function Header() {
     const [hide,setHide] = useState(true)
+    const { isOpen, setIsOpen } = useOpenFeedbackModalContext()
 
     useEffect(()=>{
-        console.log('window.innerWidth');
-        console.log(window.innerWidth);
         let dimensiMonitor = window.innerWidth
 
         if (dimensiMonitor > 640){
             setHide(false)
         }
     })
+    
 
 
     return(
@@ -30,7 +31,9 @@ export default function Header() {
                         <BsTelephoneFill className='mr-2'/>
                         +62 813 1822 8922
                     </div>
-                    <button className='flex items-center bg-amber-400 p-3 md:px-3 transition hover:opacity-70 active:opacity-100 duration-300'>
+                    <button className='flex items-center bg-amber-400 p-3 md:px-3 transition hover:opacity-70 active:opacity-100 duration-300'
+                    onClick={()=>setIsOpen(true)}
+                    >
                         <MdEmail className='mr-2 text-stone-700'/>
                         Contact Us
                     </button>
