@@ -20,14 +20,7 @@ const customStyles = {
 export default function Layout() {
     let subtitle;
     const { isOpen, setIsOpen }= useOpenFeedbackModalContext()
-    useEffect(()=>{
-
-        if(isOpen){
-            document.body.style.overflow = 'hidden';
-        }else{
-            document.body.style.overflow = 'unset';
-        }
-    },[isOpen])
+   
 
     function openModal() {
         setIsOpen(true);
@@ -86,34 +79,39 @@ export default function Layout() {
             contentLabel="Aplication Form Modal"
             className={'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-4/5 md:w-1/2 border rounded-xl p-4 z-50'}
             >
-                <div className="md:p-8">
+                <form className="md:p-8">
                     <h3 className='text-xl text-orange-900 mb-3 text-center'>Aplication Form</h3>
                     <div className='mb-2'>
                         <label htmlFor="name">Name</label>
                         <input type="text" id='email'
-                        className='border-2 block w-full rounded-lg px-2 md:py-1 hover:border-orange-900'
+                        className='border-2 block w-full rounded-lg px-2 md:py-1 hover:border-orange-900' required
                         />
                     </div>
                     <div className='mb-2'>
                         <label htmlFor="email">Email</label>
                         <input type="email" id='email'
-                        className='border-2 block w-full rounded-lg px-2 md:py-1 hover:border-orange-900'
+                        className='border-2 block w-full rounded-lg px-2 md:py-1 hover:border-orange-900' required
                         />
                     </div>
                     <div className='mb-4'>
                         <label htmlFor="message">Message</label>
                         <textarea name="message" id="message" cols="30" rows="5"
-                        className='border-2 block w-full rounded-lg px-2 md:py-1 hover:border-orange-900'
+                        className='border-2 block w-full rounded-lg px-2 md:py-1 hover:border-orange-900' required
                         ></textarea>
                     </div>
                     <button
                     className='py-1 px-4 bg-orange-900 rounded-lg drop-shadow-sm text-white w-full hover:bg-orange-800 focus:ring focus:ring-orange-700 active:bg-orange-900 mb-2'
-                    >Send</button>
+                    type={'submit'}
+                    >
+                        Send
+                    </button>
                     <button
                     className='py-1 px-4 bg-red-500 rounded-lg drop-shadow-sm text-white w-full hover:bg-red-600 focus:ring focus:ring-red-400 active:bg-red-4000'
                     onClick={()=>setIsOpen(false)}
-                    >Cancel</button>
-                </div>
+                    >
+                        Cancel
+                    </button>
+                </form>
                 
 
 
